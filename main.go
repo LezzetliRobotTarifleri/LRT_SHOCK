@@ -23,8 +23,12 @@ import (
 
 func main() {
 
+	// Change these lines
+	comPort := "COM10"
+	baudRate := 9600
+
 	// Define connection settings
-	conf := config.PortSetup()
+	conf := config.PortSetup(comPort, baudRate)
 
 	// Open and connect port with defined config parameters
 	serialPort, err := app.Connect(conf)
