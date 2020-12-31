@@ -1,4 +1,4 @@
-#CSGO Shock
+# CSGO Shock
 
 **Bu dosya** valve tarafından paylaşılmış
 https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive_Game_State_Integration

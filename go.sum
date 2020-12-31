@@ -2,3 +2,5 @@ github.com/dank/go-csgsi v0.0.0-20180324040319-026a5c0b8a8d h1:V9gwkpmgr1QTYqQqx
 github.com/dank/go-csgsi v0.0.0-20180324040319-026a5c0b8a8d/go.mod h1:4umZ15RUFM8ceg52gTczEO+dv99qbCliR/i0oMNju9A=
 github.com/tarm/serial v0.0.0-20180830185346-98f6abe2eb07 h1:UyzmZLoiDWMRywV4DUYb9Fbt8uiOSooupjTq10vpvnU=
 github.com/tarm/serial v0.0.0-20180830185346-98f6abe2eb07/go.mod h1:kDXzergiv9cbyO7IOYJZWg1U88JhDg3PB6klq9Hg2pA=
+golang.org/x/sys v0.0.0-20201223074533-0d417f636930 h1:vRgIt+nup/B/BwIS0g2oC0haq0iqbV3ZA+u6+0TlNCo=
+golang.org/x/sys v0.0.0-20201223074533-0d417f636930/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
