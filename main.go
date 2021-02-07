@@ -14,7 +14,10 @@
 package main
 
 import (
+	"flag"
+	"fmt"
 	"log"
+	"os"
 	"time"
 
 	"github.com/LezzetliRobotTarifleri/csgo-shock/app"
@@ -23,12 +26,21 @@ import (
 
 func main() {
 
-	// Change these lines
-	comPort := "COM10"
-	baudRate := 9600
+	// CLI arguments
+	comPort := flag.String("c", "", "COM Port (required)")
+	baudRate := flag.Int("b", 9600, "Baud Rate (default 9600)")
+
+	flag.Parse()
+
+	// Check if -c is provided
+	if *comPort == "" {
+		fmt.Println("COM Port parameter (-c) is missing!")
+		flag.Usage()
+		os.Exit(1)
+	}
 
 	// Define connection settings
-	conf := config.PortSetup(comPort, baudRate)
+	conf := config.PortSetup(*comPort, *baudRate)
 
 	// Open and connect port with defined config parameters
 	serialPort, err := app.Connect(conf)
