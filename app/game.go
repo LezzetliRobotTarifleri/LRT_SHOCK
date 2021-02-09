@@ -12,8 +12,9 @@ import (
 // to device connected to serial port
 func Game(game *csgsi.Game, serialPort *serial.Port) {
 	for state := range game.Channel {
-		str := strconv.Itoa(state.Player.State.Health)
-		_, err := serialPort.Write([]byte(str))
+		health := strconv.Itoa(state.Player.State.Health)
+		health = health + "*"
+		_, err := serialPort.Write([]byte(health))
 		if err != nil {
 			log.Fatal(err)
 		}
